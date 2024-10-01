@@ -3,7 +3,7 @@ body {
     padding: 0;
 }
 .wrapper {
-    background-image: url("images/csn.jpg");
+    background-image: url("/CordialAssociates/images/csn.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url('images/csn.jpg');
     background-size: cover;
     background-position: fixed;
