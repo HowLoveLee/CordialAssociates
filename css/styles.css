@@ -1,29 +1,39 @@
 body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
+
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 120px;
+}
+nav, .navbar img{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+nav{
+    padding-right:20px;
+}
+.navbar img{
+    padding-left:20px;
+    height: 72px;
+    width: 250px;
 }
 .wrapper {
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), 
-    url("/CordialAssociates/images/csn.jpg");
+    url("C:/Dev/CIT260/CordialAssociates/images/csn.jpg");
     background-size: cover;
-    background-position: fixed;
-    width: 100%;
-    height: 100vh;
-    padding-bottom: 7%;
+    background-position: center center;
+    width: 100vw;
+    height:520px;
+    
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 6% 15px 3%;
-    background-color: white;
-    opacity: 95%;
-}
-header h1 {
-    font-weight: 500;
-}
 nav li {
     display: inline-block;
     list-style: none;
@@ -40,6 +50,7 @@ nav li a:hover {
     border-bottom: 3px solid #01478E;
     transition: 0.3s;
 }
+
 #active {
     background-color: #01478E;
     border-radius: 40px;
@@ -60,24 +71,59 @@ nav li a:hover {
     font-size: 21px;
     color: whitesmoke;
     opacity: 95%;
-    margin: 8% 6% 0px 0px;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 #slogan {
+
     width: 580px;
     height: 230px;
     color: white;
-    bottom: 0;
-    position: absolute;
+    margin-bottom: 40px;
 }
 #slogan h1 {
     color: white;
     font-weight: 600;
-    margin: 18% 0px 0px 20%;
-    font-size: 60px;
+    font-size: calc(4vw + 4vh);
     font-style: italic;
     text-align: center;
     white-space: nowrap;
+
 }
+
+@media only screen and (min-width: 950px) {
+#slogan h1{
+    white-space: nowrap;
+
+}
+
+#slogan{
+    margin-left: 40px;
+    padding-top: 250px;
+
+}
+}
+
+@media only screen and (max-width: 949px) {
+    #slogan{
+        margin-left: 20px;
+        padding-top: 250px;
+
+    }
+    #slogan h1{
+        white-space:initial;
+    
+    }
+}
+
+@media only screen and (max-width: 649px) {
+
+    #slogan{
+        white-space:initial;
+    
+    }
+}
+
 #registerbtn {
     margin: 3% 0% 0% 35%;
     padding: 15px 25px;
